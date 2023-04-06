@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root 'users#index'
+
+  # コントローラは、ApplicationControllerを継承しているため、ApplicationControllerで定義されたアクションも実行可能
+  # root 'users#hello'
 end
