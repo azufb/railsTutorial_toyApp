@@ -8,6 +8,8 @@ class UsersController < ApplicationController
 
   # GET /users/1 or /users/1.json
   def show
+    # micropostsを表示
+    @microposts = Micropost.find(params[:id])
   end
 
   # GET /users/new
